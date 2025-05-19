@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Işılay Özlü - Frontend Developer</title>
+</head>
+
+<body>
+    <div id="all-part">
+
+        <section id="profil" class="main-section">
+            <img src="resimler/snapchat_foto.webp" alt="Işılay Özlü">
+            <h2 class="name">Işılay Özlü</h2>
+            <p class="gorev">Frontend Developer</p>
+            <hr>
+          
+            <ul>
+                <li class="info">
+                    <div class="logo"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="info-text">
+                        <label>E-MAIL</label>
+                        <p>isilayozlu@gmail.com</p>
+                    </div>
+                </li>
+                <li class="info">
+                    <div class="logo"><i class="fa-solid fa-phone"></i></div>
+                    <div class="info-text">
+                        <label>PHONE</label>
+                        <p>+90 123 456 78 90</p>
+                    </div>
+                </li>
+                <li class="info">
+                    <div class="logo"><i class="fa-solid fa-cake-candles"></i></div>
+                    <div class="info-text">
+                        <label>BIRTHDAY</label>
+                        <p>11 August, 2004</p>
+                    </div>
+                </li>
+                <li class="info">
+                    <div class="logo"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="info-text">
+                        <label>LOCATION</label>
+                        <p>Sinop, TURKEY</p>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="link">
+                <li class="account-links">
+                    <a href="https://www.linkedin.com/in/i%C5%9F%C4%B1lay-%C3%B6-0a8893294/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li class="account-links">
+                    <a href="https://github.com/isilayozlu"><i class="fa-brands fa-github"></i></a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="main-part">
+            <nav>
+                <ul>
+                    <li><a class="nav-links" href="javascript:void(0);" onclick="showAbout()">About</a></li>
+                    <li><a class="nav-links" href="javascript:void(0);" onclick="showResume()">Resume</a></li>
+                    <li><a class="nav-links" href="javascript:void(0);" onclick="showPortfolio()">Portfolio</a></li>
+                    <li><a class="nav-links" href="javascript:void(0);" onclick="showBlog()">Blog</a></li>
+                </ul>
+            </nav>
+            
+            <div id="about" class="nav-section">
+                <h2 class="main-title">Hakkımda</h2>
+                <div class="text-content">
+                    <p>Merhaba, ben Işılay Özlü. Bilgisayar Mühendisliği öğrencisiyim ve yazılım geliştirme alanında kendimi sürekli geliştiriyorum. Özellikle web geliştirme konusuna ilgi duyuyor, yeni teknolojileri öğrenmeye hevesle yaklaşıyorum.</p>
+                    <br>
+                    <p>Gelişime açık, öğrenmeyi seven ve sorumluluk almaktan çekinmeyen biriyim. Kod yazmayı, projeler üretmeyi ve hem teknik hem de kişisel olarak kendimi geliştirmeyi hedefliyorum. Takım çalışmalarına uyum sağlayabilen, çözüm odaklı ve tutkulu bir yazılım geliştirici olma yolunda ilerliyorum.</p>
+                </div>
+                
+                <h2 class="sub-title">Ne Yapıyorum?</h2>
+                <ul class="card-container">
+                    <li class="card" onclick="this.classList.toggle('expanded')">
+                        <img class="card-image" src="resimler/web-design (5).png" alt="Web Design">
+                        <div class="card-content">
+                            <h3>Web Tasarımı</h3>
+                            <p>Modern, erişilebilir ve kullanıcı odaklı arayüzler tasarlayarak farklı cihazlarda tutarlı ve estetik bir deneyim sunuyorum.</p>
+                        </div>
+                    </li>
+                    <li class="card" onclick="this.classList.toggle('expanded')">
+                        <img class="card-image" src="resimler/coding (1).png" alt="Frontend Development">
+                        <div class="card-content">
+                            <h3>Frontend Development</h3>
+                            <p>HTML, CSS, JavaScript ve React kullanarak duyarlı, etkileşimli ve kullanıcı dostu web uygulamaları geliştiriyorum.</p>
+                        </div>
+                    </li>
+                    <li class="card" onclick="this.classList.toggle('expanded')">
+                        <img class="card-image" src="resimler/web-design (4).png" alt="UI/UX">
+                        <div class="card-content">
+                            <h3>UI/UX</h3>
+                            <p>Kullanıcı davranışlarını analiz ederek, sezgisel ve kullanıcı memnuniyetini ön planda tutan arayüzler tasarlıyorum.</p>
+                        </div>
+                    </li>
+                    <li class="card" onclick="this.classList.toggle('expanded')">
+                        <img class="card-image" src="resimler/new-technologies.png" alt="Learning New Technologies">
+                        <div class="card-content">
+                            <h3>Yeni Teknolojileri Öğrenmek</h3>
+                            <p>Yeni araçlar ve teknolojileri deneyimleyerek (Git, Figma vb.) teknik bilgi birikimimi sürekli güncelliyorum.</p>
+                        </div>
+                    </li>
+                    <li class="card" onclick="this.classList.toggle('expanded')">
+                        <img class="card-image" src="resimler/support.png" alt="Team Collaboration">
+                        <div class="card-content">
+                            <h3>Takım Çalışması</h3>
+                            <p>Projelerde aktif rol alarak fikir alışverişine açık, iletişim becerileri güçlü ve iş birliğine dayalı bir şekilde çalışıyorum.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="resume" class="nav-section">
+
+                <div class="info">
+                        <div class="logo mt-20"><i class="fa-solid fa-book-open"></i></div>
+                        <div class="resume-text">
+                            <h2 class="sub-title">Özet</h2>
+                            <p>2025 yazı itibarıyla Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. Akademik bilgilerimi staj deneyimleriyle
+                                pekiştirerek yazılım geliştirme alanında profesyonel bir kariyer hedefliyorum. Özellikle web teknolojilerine
+                                yoğun ilgi duyuyor; HTML, CSS, PHP ve JavaScript gibi teknolojilerle projeler geliştirerek kendimi
+                                bu alanda sürekli geliştiriyorum. Git ve GitHub gibi versiyon kontrol sistemlerini etkin bir şekilde
+                                kullanıyor, öğrendiklerimi uygulamalı olarak pekiştiriyorum. Takım çalışmasına uyumlu, sorumluluk almaktan
+                                çekinmeyen ve gelişime açık bir birey olarak, yaz stajımda teknik becerilerimi ileriye taşımayı ve sektörel deneyim kazanmayı amaçlıyorum.</p>
+                        </div>
+                </div>
+            
+                <div class="info">
+                    <div class="logo mt-20"><i class="fa-solid fa-code"></i></div>
+                    <div class="resume-text">
+                        <h2 class="sub-title">Teknik Beceriler</h2>
+                        <ul class="ml-25">
+                            <li><b>Programlama Dilleri:</b> C, Java, PHP, HTML, CSS, JavaScript</li>
+                            <li><b>Web Teknolojileri:</b> Frontend geliştirme, responsive tasarım</li>
+                            <li><b>Veritabanı:</b> Oracle SQL</li>
+                            <li><b>Geliştirme Araçları:</b> Git, GitHub, Visual Studio Code</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="info">
+                    <div class="logo mt-20"><i class="fa-solid fa-lightbulb"></i></div>
+                    <div class="resume-text">
+                        <h2 class="sub-title">Projeler & Çalışmalar</h2>
+            
+                        <div>
+                            <h3>Kişisel Web Sitesi</h3>
+                            <ul class="ml-25">
+                                <li>Portföyümü sergilemek amacıyla mobil uyumlu, kullanıcı dostu bir kişisel web sitesi geliştiriyorum.</li>
+                                <li><b>Kullanılan Teknolojiler:</b> HTML, CSS, JavaScript</li>
+                            </ul>
+                        </div>
+            
+                        <br>
+            
+                        <div>
+                            <h3>E-Egzersiz Mobil Uygulaması (TÜBİTAK Destekli)</h3>
+                            <h4><i>Geliştirici | Devam Ediyor – 2025</i></h4>
+                            <ul class="ml-25">
+                                <li>Kronik bel ağrısı olan bireylerin egzersiz takibini kolaylaştırmayı hedefleyen Android uygulama geliştiriyoruz.</li>
+                                <li>Kullanıcı arayüzü Kotlin ve XML ile geliştirilecek, tasarımlar Figma üzerinden prototiplenmektedir.</li>
+                                <li>Kullanıcı yönetimi için Firebase, egzersiz verileri için SQLite kullanılacaktır.</li>
+                                <li>Video destekli egzersiz gösterimi, takvim ve hatırlatıcı özellikleri entegre edilecektir.</li>
+                                <li><b>Hedef Teknolojiler:</b> Android Studio, Kotlin, XML, Firebase, SQLite, Figma</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="info">
+                    <div class="logo mt-20"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="resume-text">
+                        <h2 class="sub-title">Eğitim</h2>
+                        <div class="education-info">
+                            <div class="education-school"><b>Boyabat Türk Telekom Fen Lisesi, Sinop ( 2018 - 2022 )</b></div>
+                        </div>
+            
+                        <div class="education-info">
+                            <div class="education-school"><b>Karabük Üniversitesi, Bilgisayar Mühendisliği ( 2022 - devam ediyor )</b>
+                                <ul class="ml-25">
+                                    <li>Bilgisayar Mühndisliği Lisans Öğrencisi</li>
+                                    <li>Beklenen Mezuniyet Tarihi: May 2027</li>
+                                    <li>GNO: 3.35/4.0</li>
+                                </ul>
+                            </div></div>
+                            
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="logo mt-20"><i class="fa-solid fa-circle-info"></i></div>
+                    <div class="resume-text">
+                        <h2 class="sub-title">Ek bilgiler</h2>
+                        <ul class="ml-25">
+                            <li><b>Yabancı Dil:</b>  İngilizce (B1 seviyesi - geliştirme sürecinde)</li>
+                            <li><b>Faaliyetler: </b>  Google Developer Groups On Campus topluluğunun aktif bir üyesi olarak etkinlik planlama
+                                ve organizasyonuna katkıda bulunuyorum. Bu rol sayesinde ekip çalışması becerilerimi geliştiriyor ve
+                                etkinlik koordinasyonunda uygulamalı deneyim kazanıyorum</li>
+                           </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="portfolio" class="nav-section">
+                <h2 class="main-title">Projeler</h2>
+                <div class="card-container">
+                    
+                    <div class="card" onclick="enterCard(1)">
+                        <img class="card-image" src="resimler/blog-1.png" alt="blog">
+                        <div class="card-content">
+                            <h3>Blog</h3>
+                            <p>Bu blog tasarımı, temel HTML ve CSS özellikleriyle yapılan bir projedir.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" onclick="enterCard(2)">
+                        <img class="card-image" src="resimler/portfolio.png" alt="blog">
+                        <div class="card-content">
+                            <h3>Portfolio</h3>
+                            <p>Bu projede, yalnızca HTML ve CSS kullanarak basit bir portföy web sitesi örneği geliştirdim. Ana hedefim, temel web geliştirme becerilerimi pekiştirmek, HTML yapısı ve CSS düzenlemeleri konusunda pratik yaparak kendimi geliştirmekti. Eğitim amaçlı hazırladığım bu çalışma, frontend alanındaki öğrenme sürecimin bir parçasıdır.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" onclick="enterCard(3)">
+                        <img class="card-image" src="resimler/gsb.png" alt="blog">
+                        <div class="card-content">
+                            <h3>GSB Wi-Fi </h3>
+                            <p>Bu proje, GSB WiFi sitesini taklit etmek amacıyla tasarladığım bir web sitesidir. Bu projeyi, HTML ve CSS kullanarak oluşturmayı hedefledim. Amacım, gerçek bir web sitesinin tasarımını anlayarak, kullanıcı arayüzü ve görsel öğeleri doğru bir şekilde yerleştirme becerimi geliştirmekti.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" onclick="enterCard(4)">
+                        <img class="card-image" src="resimler/responsive-1.png" alt="blog">
+                        <div class="card-content">
+                            <h3>Responsive Web Sitesi</h3>
+                            <p>Bu proje, responsive tasarım kullanarak geliştirdiğim bir web sitesidir. Amacım, farklı cihazlarda düzgün görüntülenen bir site tasarımı yapmaktı. HTML ve CSS kullanarak baştan sona her sayfa elemanını tasarladım ve siteyi mobil uyumlu hale getirdim.</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card" onclick="enterCard(5)">
+                        <img class="card-image" src="resimler/freelencer-1.png" alt="blog">
+                        <div class="card-content">
+                            <h3>Freelancer Web Sitesi</h3>
+                            <p>Bu projede modern bir kullanıcı arayüzü (UI) ve kullanıcı deneyimi (UX) odaklı, tamamen responsive bir web tasarımı geliştirdim. HTML5 ve CSS3 teknolojilerini kullanarak oluşturduğum bu statik web sitesi, tüm cihazlarda ve ekran boyutlarında mükemmel şekilde çalışacak şekilde optimize edilmiştir.</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card" onclick="enterCard(6)">
+                        <img class="card-image" src="resimler/todo/todo-1.png" alt="blog">
+                        <div class="card-content">
+                            <h3>To-do List Projesi</h3>
+                            <p>Bu proje, kullanıcılara görevlerini kolayca takip etmelerini sağlayan basit bir Todo List uygulamasıdır. Kullanıcılar, yeni görevler ekleyebilir, mevcut görevleri silebilir ve tüm görevleri temizleyebilir. Ayrıca, görevler arasında filtreleme yaparak aradıkları görevleri hızla bulabilmeleri mümkündür.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div id="cardDetail" class="card-detail nav-section">
+                <button onclick="exitCard()">Geri</button>
+                <div id="cardDetailContent" class="card-content">
+                    <!-- İçerik  eklenecek -->
+                </div>
+            </div>
+
+            <div id="blog" class="nav-section">
+                <div id="photos">
+                <h2 class="main-title">Fotoğraflar</h2>
+                <img src="resimler/galeri/18.jpg">
+                <img src="resimler/galeri/11.jpg">
+                <img src="resimler/galeri/14.jpg">              
+                <img src="resimler/galeri/7.jpg">
+                <img src="resimler/galeri/12.jpg">
+                <img src="resimler/galeri/17.jpg">
+                <img src="resimler/galeri/1.jpg">
+                <img src="resimler/galeri/22.jpg">
+                <img src="resimler/galeri/5.jpg">
+                <img src="resimler/galeri/13.jpg">     
+                <img src="resimler/galeri/19.jpg">
+                <img src="resimler/galeri/8.jpg">
+                <img src="resimler/galeri/6.jpg">               
+                <img src="resimler/galeri/10.jpg">
+                <img src="resimler/galeri/21.jpg">   
+            </div>
+            </div> 
+        </section>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
